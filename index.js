@@ -8,7 +8,7 @@ app.use(express.static(path.resolve() + "/www")) // define a pasta estatica, fic
 app.get("/", function(requisicao, resposta){ //cria um retorno para o servidor
     resposta.sendFile(path.resolve() + "/www/index.html") // retorna o arquivo para o caminho "/www"
 })
-
-app.listen(3003, function(){
+const PORT = 8080 || 3003
+app.listen(PORT, function(){
     console.log('Meu servidor esta ligado! http://localhost:3003')
 })
