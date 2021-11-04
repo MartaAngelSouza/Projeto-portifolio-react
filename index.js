@@ -11,5 +11,5 @@ app.get("/", function(requisicao, resposta){ //cria um retorno para o servidor
 })
 const port = process.env.PORT || 3003
 app.listen(port, function(){
-    console.log('Meu servidor esta ligado! http://localhost:"' + port)
+    console.log('Meu servidor esta ligado! http://localhost:' + port)
 })
