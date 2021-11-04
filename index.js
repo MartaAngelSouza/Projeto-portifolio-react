@@ -1,6 +1,6 @@
 const express = require("express"); // chamar a bliblioteca express
 const path = require("path"); //bibliote que ja esta no mode-modules, define o caminho absoluto
-require("dotenv"); //Para usar variável de ambiente
+require("dotenv/config"); //Para usar variável de ambiente
 
 const app = express(); // colocar a biblioteca no app
 
